@@ -20,16 +20,16 @@ function carregar() {
         msg.innerHTML = `Agora são ${hora}:${minuto}:${segundos}`;
 
 
-        if (hora >= 0 && hora < 5) {
+        if (hora >= 12 && hora < 5) {
             //Boa madrugada!
             img.src = "./images/madrugada.jpg";
             bgd.style.background = "#2B3E50";
 
-        } else if (hora >= 6 && hora < 12) {
+        } else if (hora >= 5 && hora <= 12) {
             //Bom dia!
             img.src = './images/manha.jpg';
             bgd.style.background = "#FFD700";
-        } else if (hora >= 12 && hora < 18) {
+        } else if (hora > 13 && hora < 18) {
             //Boa tarde!
             img.src = "./images/tarde.png";
             bgd.style.background = "#F4A261";
